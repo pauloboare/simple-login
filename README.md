@@ -1,2 +1,2 @@
 # simple-login
- Simple login template with some security
+ Simple login template with security
