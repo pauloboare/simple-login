@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
+<?php include "header.php"; ?>
 <form method="post" action="login.php">
 <input type="text" name="user" placeholder="User" required /> <br/>
 <input type="password" name="password" placeholder="Password" required /> <br/>
@@ -36,5 +29,4 @@
 
 	<p> Don't have a registration?<a href="register.php"> Make your registration!</a> </p>
 
-</body>
-</html>
+<?php include "footer.php"; ?>

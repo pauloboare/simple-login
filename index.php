@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-    p {
-        margin: auto;
-        width: 300px;
-        font-size: 20px;
-        text-align: center;
-    }
-    </style>
+<?php include "header.php"; ?>
 
 
-<body>
 <?php include "session.php"; ?>
 
 <h1> HOME </h1>
@@ -31,5 +17,5 @@
     <p>
     <a href="logout.php"> Logout </a>
     </p>
-</body>
-</html>
+
+    <?php include "footer.php"; ?>
