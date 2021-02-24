@@ -6,7 +6,7 @@
 <h1> HOME </h1>
 
 <?php
-	echo "Olá, ".$_SESSION['user-checked'];
+	echo "Hello, ".$_SESSION['user-checked'];
 ?>
     <p>  
     This page is only accessed if the user is verified. <br>
