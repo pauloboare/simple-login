@@ -17,7 +17,7 @@
 	if(isset($_POST['user'],$_POST['password'])){
 		session_start();
 		$user=$_POST['user'];
-		$password=$_POST['password'];
+		$password=md5(md5($_POST['password']."#?*&#"));;
 		$check=mysqli_query($connect, "SELECT * FROM tb_users WHERE users ='$user' AND passwords ='$password'");
 
 		if(mysqli_num_rows($check) > 0 ) {

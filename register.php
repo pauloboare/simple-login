@@ -17,8 +17,8 @@
     include "connect.php";
     if(isset($_POST['user'],$_POST['password'])){
     $a=$_POST['user'];
-    $b=$_POST['password'];
-    $c=$_POST['r-password'];
+    $b=md5(md5($_POST['password']."#?*&#"));
+    $c=md5(md5($_POST['r-password']."#?*&#"));;
         if($b==$c){
         $register="INSERT INTO tb_users VALUES (NULL,'$a', '$b')";
         $result=mysqli_query($connect, $register);
